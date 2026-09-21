@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-base: #090909;
+    --bg-subtle: #101010;
+    --bg-card: #171717;
+    --bg-elevated: #1E1E1E;
+    --border-color: #2A2A2A;
+    --accent-violet: #7C3AED;
+    --accent-purple: #A855F7;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-dark-base text-light-primary font-sans selection:bg-violet-primary/30 selection:text-light-primary;
+    background-color: #090909;
+  }
+
+  /* Sleek modern scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #090909;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #2A2A2A;
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #7C3AED;
+  }
+}
+
+@layer components {
+  /* Futuristic card base */
+  .ui-card {
+    @apply bg-dark-card border border-dark-border rounded-xl transition-all duration-300 relative overflow-hidden;
+  }
+
+  .ui-card:hover {
+    @apply border-violet-primary/50 shadow-violet-glow -translate-y-0.5;
+  }
+
+  /* Tag pill */
+  .tag-mono {
+    @apply inline-flex items-center px-2.5 py-1 text-[0.65rem] font-mono tracking-wider uppercase rounded-md
+      bg-dark-elevated text-light-secondary border border-dark-border hover:border-violet-primary/40 hover:text-violet-highlight
+      transition-colors duration-200;
+  }
+
+  /* Section header badge */
+  .section-badge {
+    @apply inline-flex items-center gap-2 px-3 py-1 text-[0.7rem] font-mono tracking-widest uppercase rounded-full
+      bg-violet-primary/10 border border-violet-primary/30 text-violet-highlight mb-4;
+  }
+}
+
+@layer utilities {
+  .text-gradient-purple {
+    @apply bg-gradient-to-r from-light-primary via-light-primary to-violet-highlight bg-clip-text text-transparent;
+  }
+
+  .bg-grid-pattern {
+    background-size: 32px 32px;
+    background-image: 
+      linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  }
+}
