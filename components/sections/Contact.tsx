@@ -5,7 +5,7 @@ import { Github, Linkedin, Mail, FileText, ArrowUpRight } from 'lucide-react'
 
 export default function Contact() {
   const handleResumeClick = () => {
-    window.open('/resume.pdf', '_blank')
+    window.open('/portfolio/resume.pdf', '_blank')
   }
 
   return (
@@ -71,7 +71,7 @@ export default function Contact() {
               </a>
 
               <a
-                href="public/resume.pdf"
+                href="/portfolio/resume.pdf"
                 download="Rishika_B_S_Resume.pdf"
                 className="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-violet-primary/10 border border-violet-primary/30 text-violet-highlight text-xs font-mono tracking-wider uppercase hover:bg-violet-primary/20 transition-all font-medium"
               >
@@ -92,7 +92,7 @@ export default function Contact() {
           <a href="https://github.com/rishika-1802" target="_blank" rel="noopener noreferrer" className="hover:text-violet-highlight transition-colors">GitHub</a>
           <a href="https://www.linkedin.com/in/rishika-b-s/" target="_blank" rel="noopener noreferrer" className="hover:text-violet-highlight transition-colors">LinkedIn</a>
           <a href="mailto:rishikabs1802@gmail.com" className="hover:text-violet-highlight transition-colors">Email</a>
-          <a href="/resume.pdf" download="Rishika_B_S_Resume.pdf" className="hover:text-violet-highlight transition-colors">Resume</a>
+          <a href="/portfolio/resume.pdf" download="Rishika_B_S_Resume.pdf" className="hover:text-violet-highlight transition-colors">Resume</a>
         </div>
         <div>
           © 2026 Rishika B S

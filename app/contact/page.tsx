@@ -7,7 +7,7 @@ import { Github, Linkedin, Mail, FileText, ArrowUpRight } from 'lucide-react'
 
 export default function ContactPage() {
   const handleResumeClick = () => {
-    window.open('/resume.pdf', '_blank')
+    window.open('/portfolio/resume.pdf', '_blank')
   }
 
   return (
@@ -83,7 +83,7 @@ export default function ContactPage() {
               </a>
 
               <a
-                href="/resume.pdf"
+                href="/portfolio/resume.pdf"
                 download="Rishika_B_S_Resume.pdf"
                 className="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-violet-primary/10 border border-violet-primary/30 text-violet-highlight text-xs font-mono tracking-wider uppercase hover:bg-violet-primary/20 transition-all font-medium"
               >

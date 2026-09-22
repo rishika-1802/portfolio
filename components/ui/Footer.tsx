@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function Footer() {
   const handleResumeClick = () => {
-    window.open('/resume.pdf', '_blank')
+    window.open('/portfolio/resume.pdf', '_blank')
   }
 
   return (
@@ -17,7 +17,7 @@ export default function Footer() {
           <a href="https://github.com/rishika-1802" target="_blank" rel="noopener noreferrer" className="hover:text-violet-highlight transition-colors">GitHub</a>
           <a href="https://www.linkedin.com/in/rishika-b-s/" target="_blank" rel="noopener noreferrer" className="hover:text-violet-highlight transition-colors">LinkedIn</a>
           <a href="mailto:rishikabs1802@gmail.com" className="hover:text-violet-highlight transition-colors">Email</a>
-          <a href="/resume.pdf" download="Rishika_B_S_Resume.pdf" className="hover:text-violet-highlight transition-colors">Resume</a>
+          <a href="/portfolio/resume.pdf" download="Rishika_B_S_Resume.pdf" className="hover:text-violet-highlight transition-colors">Resume</a>
         </div>
         <div>
           © 2026 Rishika B S

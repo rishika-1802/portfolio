@@ -54,7 +54,7 @@ export default function Hero() {
               <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
             </button>
             <a
-              href="/resume.pdf"
+              href="/portfolio/resume.pdf"
               download="Rishika_B_S_Resume.pdf"
               className="inline-flex items-center gap-2 px-5 py-3.5 rounded-lg bg-violet-primary/10 border border-violet-primary/40 text-violet-highlight text-xs font-mono tracking-wider uppercase font-semibold hover:bg-violet-primary/20 hover:border-violet-primary/60 transition-all duration-300"
             >

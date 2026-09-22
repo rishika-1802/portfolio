@@ -29,7 +29,7 @@ export default function Navbar() {
   }, [])
 
   const handleResumeClick = () => {
-    window.open('/resume.pdf', '_blank')
+    window.open('/portfolio/resume.pdf', '_blank')
   }
 
   return (
@@ -80,7 +80,7 @@ export default function Navbar() {
 
             {/* RESUME link */}
             <a
-              href="/resume.pdf"
+              href="/portfolio/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               download="Rishika_B_S_Resume.pdf"
@@ -139,7 +139,7 @@ export default function Navbar() {
                 ACHIEVEMENTS
               </Link>
               <a
-                href="/resume.pdf"
+                href="/portfolio/resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 download="Rishika_B_S_Resume.pdf"
