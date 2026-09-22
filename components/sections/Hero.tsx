@@ -133,7 +133,7 @@ export default function Hero() {
               {/* Portrait Image container */}
               <div className="relative aspect-[4/5] rounded-xl overflow-hidden bg-dark-elevated">
                 <Image
-                  src="/portrait.png"
+                  src="/portfolio/portrait.png"
                   alt="Rishika B S"
                   fill
                   sizes="(max-width: 768px) 100vw, 500px"
